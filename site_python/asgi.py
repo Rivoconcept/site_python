@@ -1,5 +1,5 @@
 """
-ASGI config for inventaire_python project.
+ASGI config for site_python project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'inventaire_python.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'site_python.settings')
 
 application = get_asgi_application()

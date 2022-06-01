@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Facture</title>
+    <title>{% block title %} {% endblock %}</title>
     <link rel="shortcut icon" type="image" href="asset/images/user.jpg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link rel="stylesheet" href="asset/bootstrap/css/bootstrap.min.css">
@@ -15,10 +15,22 @@
 
 </head>
 
-<body class="index">
-    {% block contenu %}
-
-    {% endblock %}
+<body>
+    <div>
+        <ul>
+            <li style="padding:20px 20px; display:inline-block">
+                <a href="/">Accueil</a>
+            </li>
+            <li style="padding:20px 20px; display:inline-block">
+                <a href="/articles/">Articles</a>
+            </li>
+            <li style="padding:20px 20px; display:inline-block">
+                <a href="/contact/">Contact</a>
+            </li>
+            
+        </ul>
+    </div>
+    {% block contenu %} {% endblock %}
    
 
 

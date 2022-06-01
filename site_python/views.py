@@ -1,10 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def home_view(request):
-     return HttpResponse('Bonjour tout le monde')
-
-def acceuil(request):
+def accueil(request):
     return render(request, "accueil.html")
 
 def articles(request):

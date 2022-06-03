@@ -19,13 +19,13 @@
     <div>
         <ul>
             <li style="padding:20px 20px; display:inline-block">
-                <a href="/">Accueil</a>
+                <a href="{% url 'home' %}">Accueil</a>
             </li>
             <li style="padding:20px 20px; display:inline-block">
-                <a href="/articles/">Articles</a>
+                <a href="{% url 'article' %}">Articles</a>
             </li>
             <li style="padding:20px 20px; display:inline-block">
-                <a href="/contact/">Contact</a>
+                <a href="{% url 'contact' %}">Contact</a>
             </li>
             
         </ul>
